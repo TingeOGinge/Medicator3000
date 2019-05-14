@@ -1,0 +1,39 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+}
+
+/*--------------ID Selectors--------------*/
+#conatiner {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/*--------------Class Selectors--------------*/
+.timeslot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sub_timeslot {
+  padding: 5vh 5vw;
+  border: solid;
+}
+
+/*--------------Element Selectors--------------*/
+p {
+  width: auto;
+  height: auto;
+}
+
+/*----------------------------*/
