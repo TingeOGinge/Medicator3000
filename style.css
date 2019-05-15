@@ -7,33 +7,45 @@
 }
 
 /*--------------ID Selectors--------------*/
-#conatiner {
-  display: grid;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+#bed {
+  margin-bottom: 5vh;
+}
+
+#morn {
+  margin-top: 5vh;
 }
 
 /*--------------Class Selectors--------------*/
+.pills_stock_image {
+  width: 75%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+}
+
 .timeslot {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 20vh;
+  margin: 0 5vw;
 }
 
 .sub_timeslot {
-  padding: 5vh 5vw;
   border: solid;
+  height: auto;
 }
 
 /*--------------Element Selectors--------------*/
-p {
-  width: auto;
+label {
+  font-size: 80%;
+  top: 0;
+}
+
+textarea {
+  width: 90%;
   height: auto;
+  resize: none;
+  font-size: 75%
 }
 
 /*----------------------------*/
