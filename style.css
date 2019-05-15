@@ -16,11 +16,21 @@
 }
 
 /*--------------Class Selectors--------------*/
+.nav_item {
+  display: inline-block;
+  padding: 1em 2em;
+}
+
 .pills_stock_image {
   width: 75%;
   height: auto;
   top: 50%;
   left: 50%;
+}
+
+.sub_timeslot {
+  border: solid;
+  height: auto;
 }
 
 .timeslot {
@@ -30,12 +40,16 @@
   margin: 0 5vw;
 }
 
-.sub_timeslot {
-  border: solid;
-  height: auto;
+/*--------------Element Selectors--------------*/
+nav {
+  width: 100%;
+  display: inline-block;
 }
 
-/*--------------Element Selectors--------------*/
+nav ul {
+  text-align: center;
+}
+
 label {
   font-size: 80%;
   top: 0;
@@ -43,9 +57,10 @@ label {
 
 textarea {
   width: 90%;
-  height: auto;
+  height: 80%;
   resize: none;
-  font-size: 75%
+  font-size: 75%;
+  margin-left: .25em;
 }
 
 /*----------------------------*/
