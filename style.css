@@ -12,12 +12,19 @@
 }
 
 #morn {
-  margin-top: 5vh;
+  margin-top: 4vh;
 }
 
 /*--------------Class Selectors--------------*/
+.active {
+  background-color: blue;
+  color: white;
+}
+
 .nav_item {
+  border-radius: 1em;
   display: inline-block;
+  margin: 1vh 2vw;
   padding: 1em 2em;
 }
 
