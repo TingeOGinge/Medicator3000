@@ -30,14 +30,18 @@
 
 .pills_stock_image {
   width: 75%;
-  height: auto;
-  top: 50%;
-  left: 50%;
+  height: 75%;
 }
 
 .sub_timeslot {
   border: solid;
   height: auto;
+}
+
+.sub_timeslot.pill_section {
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 .timeslot {
