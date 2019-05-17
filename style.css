@@ -33,6 +33,10 @@
   padding: 1em 2em;
 }
 
+.complete {
+  visibility: hidden;
+}
+
 .pills_stock_image {
   width: 30vw;
   height: auto;
