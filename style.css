@@ -26,7 +26,7 @@
   color: white;
 }
 
-.nav_item {
+.button {
   border-radius: 1em;
   display: inline-block;
   margin: 1vh 2vw;
@@ -34,7 +34,7 @@
 }
 
 .pills_stock_image {
-  width: 6.5em;
+  width: 30vw;
   height: auto;
 }
 
