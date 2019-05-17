@@ -11,6 +11,11 @@
   margin-bottom: 5vh;
 }
 
+#button_section {
+  width: 100%;
+  display: inline-block;
+}
+
 #morn {
   margin-top: 4vh;
 }
@@ -53,12 +58,7 @@
 }
 
 /*--------------Element Selectors--------------*/
-nav {
-  width: 100%;
-  display: inline-block;
-}
-
-nav ul {
+ul {
   text-align: center;
 }
 
