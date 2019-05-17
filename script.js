@@ -5,8 +5,8 @@
     [] Add app worker for offline use
 */
 
-const resetButton = document.querySelector('#reset_nav_item');
-const editButton = document.querySelector('#edit_nav_item');
+const resetButton = document.querySelector('#reset_button');
+const editButton = document.querySelector('#edit_button');
 const medTextareas = document.querySelectorAll('.med_textarea');
 
 window.addEventListener("load", init);
