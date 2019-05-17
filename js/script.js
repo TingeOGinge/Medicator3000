@@ -9,7 +9,7 @@ const resetButton = document.querySelector('#reset_button');
 const editButton = document.querySelector('#edit_button');
 const medTextareas = document.querySelectorAll('.med_textarea');
 const descriptionSections = document.querySelectorAll('.description_section');
-const pillSections = document.querySelectorAll('.pill_section');
+const pillSectionImages = document.querySelectorAll('.pill_section_image');
 
 window.addEventListener("load", init);
 
@@ -18,8 +18,9 @@ function init(){
   
   editButton.addEventListener("click", editButtonAction);
   
-  for (let i = 0; i < pillSections.length; i += 1){
-    pillSections[i].firstElementChild.addEventListener("click", () => pillImageAction(descriptionSections[i], pillSections[i]));
+  for (let i = 0; i < pillSectionImages.length; i += 1){
+    pillSectionImages[i].addEventListener("click", () => 
+      pillImageAction(descriptionSections[i], pillSectionImages[i]));
   }
 }
 
@@ -40,7 +41,7 @@ function editButtonAction(){
 function pillImageAction(timeslotLeft, timeslotRight){
   if (!timeslotLeft.classList.contains("complete")){
     timeslotLeft.classList.add("complete", "closed");
-    timeslotRight.firstElementChild.src="./images/completedTick.png";
+    timeslotRight.src="./images/completedTick.png";
   } else { timeslotLeft.classList.toggle("closed"); }
 }
 
@@ -48,6 +49,6 @@ function resetTimeslots(){
   const descriptionSections = document.querySelectorAll('.description_section');
   for (let i = 0; i < descriptionSections.length; i += 1){
     descriptionSections[i].classList.remove("complete", "closed");
-    pillSections[i].firstElementChild.src="./images/pills.png";
+    pillSectionImages[i].src="./images/pills.png";
   }  
 } 
