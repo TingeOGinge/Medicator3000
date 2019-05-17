@@ -33,7 +33,7 @@
   padding: 1em 2em;
 }
 
-.complete {
+.closed {
   visibility: hidden;
 }
 

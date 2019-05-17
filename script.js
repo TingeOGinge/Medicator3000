@@ -1,7 +1,7 @@
 /*
   TO DO: 
-    [] Add functionality for 'completing' a medication slot
-    [] Add functionality for Reset button
+    [x] Add functionality for 'completing' a medication slot
+    [x] Add functionality for Reset button
     [] Add app worker for offline use
 */
 
@@ -19,7 +19,7 @@ function init(){
   editButton.addEventListener("click", editButtonAction);
   
   for (let i = 0; i < pillSections.length; i += 1){
-    pillSections[i].addEventListener("click", () => pillImageAction(descriptionSections[i], pillSections[i]));
+    pillSections[i].firstElementChild.addEventListener("click", () => pillImageAction(descriptionSections[i], pillSections[i]));
   }
 }
 
@@ -39,15 +39,15 @@ function editButtonAction(){
 
 function pillImageAction(timeslotLeft, timeslotRight){
   if (!timeslotLeft.classList.contains("complete")){
-    timeslotLeft.classList.add("complete");
+    timeslotLeft.classList.add("complete", "closed");
     timeslotRight.firstElementChild.src="./images/completedTick.png";
-  }
+  } else { timeslotLeft.classList.toggle("closed"); }
 }
 
 function resetTimeslots(){
   const descriptionSections = document.querySelectorAll('.description_section');
   for (let i = 0; i < descriptionSections.length; i += 1){
-    descriptionSections[i].classList.remove("complete");
+    descriptionSections[i].classList.remove("complete", "closed");
     pillSections[i].firstElementChild.src="./images/pills.png";
   }  
 } 
