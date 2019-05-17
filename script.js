@@ -1,3 +1,10 @@
+/*
+  TO DO: 
+    [] Add functionality for 'completing' a medication slot
+    [] Add functionality for Reset button
+    [] Add app worker for offline use
+*/
+
 const resetButton = document.querySelector('#reset_nav_item');
 const editButton = document.querySelector('#edit_nav_item');
 const medTextareas = document.querySelectorAll('.med_textarea');
@@ -5,7 +12,6 @@ const medTextareas = document.querySelectorAll('.med_textarea');
 window.addEventListener("load", init);
 
 function init(){
-  console.log(medTextareas);
   resetButton.addEventListener("click", function() {
     console.log("Reset button working");
   });
