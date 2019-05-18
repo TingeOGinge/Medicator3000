@@ -1,14 +1,14 @@
 const CACHE = 'medicator3000_v1';
 const cacheable = [
   './',
+  './app.js',
+  './app_worker.js',
   './mainfest.json',
   './index.html',
   './images/completedTick.png',
   './images/favicon.ico',
   './images/pills.png',
-  './js/script.js',
-  './js/app.js',
-  './js/app_worker.js',
+  './js/script.js'
 ];
 
 /* Invoke the default fetch capability to
