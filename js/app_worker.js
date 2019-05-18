@@ -1,7 +1,7 @@
 const CACHE = 'medicator3000_v1';
 const cacheable = [
   './',
-  './js/mainfest.json',
+  './mainfest.json',
   './index.html',
   './images/completedTick.png',
   './images/favicon.ico',

@@ -67,7 +67,7 @@
 }
 
 .pill_section_image {
-  width: 30vw;
+  width: 5em;
   height: auto;
 }
 
@@ -91,11 +91,6 @@
 }
 
 /*--------------Element Selectors--------------*/
-button:hover {
-  background-color: lightblue;
-  color: white;
-}
-
 ul {
   text-align: center;
 }
@@ -113,4 +108,4 @@ textarea {
   margin-left: .25em;
 }
 
-/*----------------------------*/
+/*--------------Media Queries--------------*/
