@@ -92,7 +92,7 @@
 
 /*--------------Element Selectors--------------*/
 button:hover {
-  background-color: blue;
+  background-color: lightblue;
   color: white;
 }
 

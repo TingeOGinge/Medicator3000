@@ -1,0 +1,16 @@
+{
+  "name": "Medicator3000", 
+  "icons": [
+    {
+      "purprose": "maskable", 
+      "src": "./images/pills.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ], 
+  "display": "standalone",
+  "start_url": "./index.html",
+  "background_color": "#FFF",
+  "scope": "/",
+  "theme_color": "#fff"
+}
