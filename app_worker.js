@@ -4,9 +4,9 @@ const cacheable = [
   './app.js',
   './app_worker.js',
   './mainfest.json',
+  './favicon.ico',
   './index.html',
   './images/completedTick.png',
-  './images/favicon.ico',
   './images/pills.png',
   './js/script.js'
 ];
