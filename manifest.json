@@ -5,7 +5,7 @@
       "purprose": "maskable", 
       "src": "./images/pills.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x360"
     }
   ], 
   "display": "standalone",
