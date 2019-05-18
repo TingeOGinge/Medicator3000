@@ -1,4 +1,4 @@
-const manifest = {
+{
   "name": "Medicator3000", 
   "icons": [
     {
@@ -13,4 +13,4 @@ const manifest = {
   "background_color": "#FFF",
   "scope": "/",
   "theme_color": "#fff"
-};
+}
