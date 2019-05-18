@@ -2,6 +2,7 @@
   TO DO: 
     [x] Add functionality for 'completing' a medication slot
     [x] Add functionality for Reset button
+      [x] Include dialog element to confirm reset
     [] Add app worker for offline use
 */
 
@@ -10,11 +11,19 @@ const editButton = document.querySelector('#edit_button');
 const medTextareas = document.querySelectorAll('.med_textarea');
 const descriptionSections = document.querySelectorAll('.description_section');
 const pillSectionImages = document.querySelectorAll('.pill_section_image');
+const warningDialog = document.querySelector('#reset_warning');
+const warningOkayButton = document.querySelector('#okay');
+const warningCancelButton = document.querySelector('#cancel');
 
 window.addEventListener("load", init);
 
 function init(){
-  resetButton.addEventListener("click", resetTimeslots);
+  resetButton.addEventListener("click", () => 
+    warningDialog.setAttribute("open", ""));
+    
+  warningOkayButton.addEventListener("click", resetTimeslots);
+  warningCancelButton.addEventListener("click", () => 
+    warningDialog.removeAttribute("open"));
   
   editButton.addEventListener("click", editButtonAction);
   
@@ -46,9 +55,9 @@ function pillImageAction(timeslotLeft, timeslotRight){
 }
 
 function resetTimeslots(){
-  const descriptionSections = document.querySelectorAll('.description_section');
   for (let i = 0; i < descriptionSections.length; i += 1){
     descriptionSections[i].classList.remove("complete", "closed");
     pillSectionImages[i].src="./images/pills.png";
-  }  
+  };
+  warningDialog.removeAttribute("open");
 } 
